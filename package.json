@@ -1,0 +1,16 @@
+{
+  "name": "npm-workspaces-symlink-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "scripts": {
+    "readlink": "readlink packages/bar/node_modules/foo",
+    "fixlink": "rm -rf packages/bar/node_modules/foo && ln -s ../../../packages/foo packages/bar/node_modules/foo"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "bar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "scripts": {
+    "start": "node node_modules/foo/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "foo": "file:packages/foo"
+  }
+}
