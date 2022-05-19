@@ -1,4 +1,4 @@
-name: fixed
+name: bug
 on: workflow_dispatch
 
 jobs:
