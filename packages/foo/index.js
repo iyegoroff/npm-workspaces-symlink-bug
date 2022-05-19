@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-console.log('foo')
+console.log('foo works!')
