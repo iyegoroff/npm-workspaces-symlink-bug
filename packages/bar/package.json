@@ -1,11 +1,12 @@
 {
   "name": "bar",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
   "keywords": [],
   "scripts": {
-    "start": "node node_modules/foo/index.js"
+    "start": "./node_modules/foo/index.js"
   },
   "author": "",
   "license": "ISC",

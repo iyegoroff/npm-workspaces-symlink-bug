@@ -1,0 +1,14 @@
+name: fixed
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm ci
+      - run: readlink packages/bar/node_modules/foo
+      - run: rm -rf packages/bar/node_modules/foo
+      - run: ln -s ../../../packages/foo packages/bar/node_modules/foo
+      - run: readlink packages/bar/node_modules/foo
+      - run: npm start -w packages/bar
